@@ -2,8 +2,7 @@
 from flask import Flask, request
 
 app = Flask(__name__)
-
-@app.route("/")
+@app.route('/login',methods = ['POST', 'GET'])
 def demo():
     return "<html><head><body>HELLO</body></head></html>"
 
