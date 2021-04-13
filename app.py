@@ -1,12 +1,12 @@
-
-from flask import Flask, request
+from flask import Flask
 
 app = Flask(__name__)
-@app.route('/',methods = ['POST', 'GET'])
-def demo():
-    return "<html><head><body>HELLO</body></head></html>"
 
+
+@app.route('/')
+def index():
+    return "<h1> Deployed to Heroku</h1>"
 
 
 if __name__ == "__main__":
-    app.run(port=8080)
+    app.run()
