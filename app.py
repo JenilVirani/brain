@@ -9,4 +9,5 @@ def demo():
 
 
 
-app.run(port=7890, threaded=True, debug=True)
+if __name__ == "__main__":
+    app.run()
